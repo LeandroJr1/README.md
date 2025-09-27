@@ -11,16 +11,16 @@ graph TD
     
     B --> C[Eu: Claro! Te passo o valor certinho. Só reforçando: aqui no hotel o valor da diária não é só a hospedagem, mas a sua tranquilidade, já com café da manhã, estacionamento monitorado 24h, Wi-Fi, TV a cabo e chuveiro quente.];
     
-    C --> D{Pergunta de Opção: Prefere que eu mostre a opção mais **econômica** ou a mais **confortável**?};
+    C --> D{Pergunta de Opção: Prefere que eu mostre a opção mais econômica ou a mais confortável?};
     
     D --> E{Cliente: Mais Econômica};
-    E --> F[Apresentar Valor da **Ala Recepção**];
+    E --> F[Apresentar Valor da Ala Recepção];
     F --> G{Pergunta de Fechamento: Deseja que eu reserve já para garantir a vaga?};
     G -- Sim --> K;
     G -- Não/Outra Dúvida --> H{Cliente Pede Desconto?};
 
     D --> I{Cliente: Mais Confortável};
-    I --> J[Apresentar Valor da **Ala Nova**];
+    I --> J[Apresentar Valor da Ala Nova];
     J --> K{Pergunta de Fechamento Direto: Posso já deixar a sua reserva garantida?};
     K -- Sim --> M;
     K -- Não --> H;
@@ -30,9 +30,9 @@ graph TD
 
     L --> K; 
 
-    N --> O[Resposta para Vou Pensar: Alerta de Escassez. Pergunta: Quer que eu deixe uma **pré-reserva** no seu nome?];
+    N --> O[Resposta para Vou Pensar: Alerta de Escassez. Pergunta: Quer que eu deixe uma pré-reserva no seu nome?];
     O -- Sim --> M;
-    O -- Não --> P[FIM do Atendimento (Sem Reserva)];
+    O -- Não --> P[FIM do Atendimento Sem Reserva];
 
-    M[Cliente Aceita Reserva/Pré-reserva] --> Q[Finalização: Perfeito, já vou registrar aqui. Só preciso do seu **nome completo e telefone de contato** para confirmar a reserva.];
-    Q --> R[FIM (Reserva Fechada)];
+    M[Cliente Aceita Reserva/Pré-reserva] --> Q[Finalização: Perfeito, já vou registrar aqui. Só preciso do seu nome completo e telefone de contato para confirmar a reserva.];
+    Q --> R[FIM Reserva Fechada];
